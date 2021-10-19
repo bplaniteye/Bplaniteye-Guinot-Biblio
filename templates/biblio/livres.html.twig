@@ -1,0 +1,76 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	LIVRES
+{% endblock %}
+
+{% block header %}
+{% include 'user-menu.html.twig' %}
+{% endblock %}
+
+{% block body %}
+ <h1>LIVRES</h1>
+
+ <table>
+		<style>
+			table {
+				border-style: ridge;
+				border-color: #8ebf42;
+			}
+			th {
+				border: 5px solid #095484;
+			}
+			td {
+				border: 20px groove #1c87c9;
+			}
+		</style>
+		
+		<thead>
+			<tr>				
+				<th>Ref</th>
+				<th>Titre</th>
+				<th>Auteur</th>				
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>001</td>
+				<td>C'est trop fort !</td>
+				<td>Matthieu THUET</td>			
+			</tr>
+
+			<tr>
+				<td>002</td>
+				<td>Mais je ne comprends pas !</td>
+				<td>Mohammed NABI</td>			
+			</tr>
+
+			<tr>
+				<td>003</td>
+				<td>Monsieur, pourqoui?</td>
+				<td>Moaaz KHASSAWNEH</td>			
+			</tr>
+
+			<tr>
+				<td>004</td>
+				<td>Je suis fatigué</td>
+				<td>Fabrice FOOLEREAU</td>			
+			</tr>
+
+			<tr>
+				<td>005</td>				
+				<td>Le conseil de sécurité</td>				
+				<td>Modou NDAO - Valéry NWEHLA</td>			
+			</tr>		
+		</tbody>
+	</table>
+
+
+{% endblock %}
+
+{% block footer %}
+	<div style="display: inline; width: 200px; height: 200px; border: solid; background-color: blue; color: white;">Guinot</div>
+    <div style="display: inline; width: 200px; height: 200px; border: solid; background-color: white;">Guinot</div>
+    <div style="display: inline; width: 200px; height: 200px; border: solid; background-color: red; color: white;">Guinot</div>
+{% endblock %}
