@@ -5,100 +5,115 @@
 {% endblock %}
 
 {% block header %}
-{% include 'admin-menu.html.twig' %}
-
-   <div class="row" style="margin-top : 100px;" >
-        <div class="col d-flex flex-column">
-		<button class="bouton" >
-		<a class="lien" href="{{ path('index_home') }}"> <i class="fas fa-home"></i> <br>  Accueil du site</a>
-	</button>
-		<button class="bouton" >
-		<a class="lien" href="{{ path('index_documentation') }}">
-			<i class="fas fa-file-alt"></i> <br> Documentation
-		</a>
-	</button>	
-	<button class="bouton" >
-		<a class="lien" href="{{ path('index_systeme') }}"><i class="fas fa-tools"></i> <br> Système</a>
-	</button>
-	<button class="bouton" >
-		<a class="lien" href="{{ path('index_utilisateurs') }}"><i class="fas fa-users"></i> <br> Utilisateurs</a>
-	</button>
-		</div>
-
-        <div class="col d-flex flex-column">
-		
-	<button class="bouton" >
-		<a class="lien" href="{{ path('index_contenu') }}"> <i class="fas fa-folder-open"></i> <br> Contenu</a>
-	</button>
-	<button class="bouton" >
-		<a class="lien" href="{{ path('index_categorie') }}"> <i class="fas fa-tags"></i> <br> Catégorie</a>
-	</button>
-	<button class="bouton" >
-		<a class="lien" href="{{ path('index_articles-a-la-une') }}"> <i class="fas fa-newspaper"></i> <br> Articles à la une</a>
-	</button>
-	<button class="bouton" >
-		<a class="lien" href="{{ path('index_images') }}"> <i class="fas fa-image"></i> <br> Images</a>
-	</button>
-		</div>
-
-        <div class="col d-flex flex-column ">
-		<button class="bouton" >
-		<a class="lien" href="{{ path('index_contactbiblio') }}">
-			<i class="fas fa-phone"></i> <br> Nous Contacter
-		</a>
-	</button>
-	<button class="bouton" >
-		<a class="lien" href="{{ path('index_connexion') }}"> <i class="fas fa-sign-in-alt"></i> <br>
-			Connexion
-		</a>
-	</button>
-	<button class="bouton" >
-		<a class="lien" href="{{ path('index_administration') }}">
-			Administration
-		</a>
-	</button>
-
-		<button class="bouton" >
-		<a class="lien" href="{{ path('index_logout') }}">Logout</a>
-	</button>
-		</div>
-
-        <div class="col d-flex flex-column">
-		
-	<button class="bouton" >
-		<a class="lien" href="{{ path('index_extensions') }}">Extensions</a>
-	</button>
-	<button class="bouton" >
-		<a class="lien" href="{{ path('index_a_propos') }}">
-			A propos
-		</a>
-	</button>
-	<button class="bouton" >
-		<a class="lien" href="{{ path('index_livres') }}">
-			Les livres
-		</a>
-	</button>
-	<button class="bouton" >
-		<a class="lien" href="{{ path('index_locations') }}">
-			Les locations
-		</a>
-	</button>
-	
-	
-	</div>
-    </div>
-
-
-  {% endblock %}
+	{% include 'admin-menu.html.twig' %}
+{% endblock %}
 
 {% block body %}
-{% endblock %}
 
-{% block footer %}
-{% endblock %}
+	<div class="row" style="margin-top : 100px;">
+		<div class="col d-flex flex-column">
+			<button class="bouton">
+				<a class="lien" href="{{ path('index_home') }}">
+					<i class="fas fa-home"></i>
+					<br>
+					Accueil du site
+				</a>
+			</button>
+			<button class="bouton">
+				<a class="lien" href="{{ path('index_documentation') }}">
+					<i class="fas fa-file-alt"></i>
+					<br>
+					Documentation</a>
+			</button>
+			<button class="bouton">
+				<a class="lien" href="{{ path('index_systeme') }}">
+					<i class="fas fa-tools"></i>
+					<br>
+					Système</a>
+			</button>
+			<button class="bouton">
+				<a class="lien" href="{{ path('index_utilisateurs') }}">
+					<i class="fas fa-users"></i>
+					<br>
+					Utilisateurs</a>
+			</button>
+		</div>
 
+		<div class="col d-flex flex-column">
 
+			<button class="bouton">
+				<a class="lien" href="{{ path('index_contenu') }}">
+					<i class="fas fa-folder-open"></i>
+					<br>
+					Contenu</a>
+			</button>
+			<button class="bouton">
+				<a class="lien" href="{{ path('index_categorie') }}">
+					<i class="fas fa-tags"></i>
+					<br>
+					Catégorie</a>
+			</button>
+			<button class="bouton">
+				<a class="lien" href="{{ path('index_articles-a-la-une') }}">
+					<i class="fas fa-newspaper"></i>
+					<br>
+					Articles à la une</a>
+			</button>
+			<button class="bouton">
+				<a class="lien" href="{{ path('index_images') }}">
+					<i class="fas fa-image"></i>
+					<br>
+					Images</a>
+			</button>
+		</div>
 
+		<div class="col d-flex flex-column ">
+			<button class="bouton">
+				<a class="lien" href="{{ path('index_contactbiblio') }}">
+					<i class="fas fa-phone"></i>
+					<br>
+					Nous Contacter
+				</a>
+			</button>
+			<button class="bouton">
+				<a class="lien" href="{{ path('index_connexion') }}">
+					<i class="fas fa-sign-in-alt"></i>
+					<br>
+					Connexion
+				</a>
+			</button>
+			<button class="bouton">
+				<a class="lien" href="{{ path('index_administration') }}">
+					<i class="fas fa-user-cog"></i>
+					<br>Administration
+				</a>
+			</button>
 
+			<button class="bouton">
+				<a class="lien" href="{{ path('index_logout') }}">
+					<i class="fas fa-power-off">
+						<br>
+						Logout</a>
+				</button>
+			</div>
 
+			<div class="col d-flex flex-column">
+				<button class="bouton">
+					<a class="lien" href="{{ path('index_extensions') }}"> <i class="fas fa-screwdriver"></i> <br> Extensions</a>
+				</button>
+				<button class="bouton">
+					<a class="lien" href="{{ path('index_a_propos') }}">
+						<i class="fas fa-info-circle"></i><br>A propos</a>
+				</button>
+				<button class="bouton">
+					<a class="lien" href="{{ path('index_livres') }}">Les livres
+					</a>
+				</button>
+				<button class="bouton">
+					<a class="lien" href="{{ path('index_locations') }}">Les locations</a>
+				</button>
+			</div>
+		</div>
+	{% endblock %}
 
+	{% block footer %}{% endblock %}
